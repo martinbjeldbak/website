@@ -27,10 +27,6 @@ enableEmoji = true
     url = "https://www.linkedin.com/in/martinbjeldbak"
 
   [[params.social]]
-    name = "email"
-    url = "me@martinbjeldbak.com"
-
-  [[params.social]]
     name = "instagram"
     url = "https://www.instagram.com/martinbjeldbak/"
 
