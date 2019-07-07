@@ -14,6 +14,8 @@ enableEmoji = true
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
+  email = "me@martinbjeldbak.com"
+
   homeSubtitle = "I write code for a living. Backend web developer."
 
   [[params.social]]

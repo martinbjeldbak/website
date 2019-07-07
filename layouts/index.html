@@ -18,6 +18,9 @@
     {{- with .Site.Params.homeSubtitle }}
     <p id="home-subtitle">{{.}}</p>
     {{- end }}
+    {{- with .Site.Params.email }}
+    <p id="home-subtitle"><a href="mailto:{{.}}" target="_blank">{{.}}</p>
+    {{- end }}
     {{- with .Site.Params.social }}
     <div id="home-social">
       {{ partialCached "social-icons.html" . }}
