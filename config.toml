@@ -1,8 +1,12 @@
-baseURL = "https://martinbjeldbak.com/"
+baseURL = "https://martinbjeldbak.com"
 languageCode = "en-us"
+defaultContentLanguage = "en"
 title = "Martin Bjeldbak Madsen"
 theme = "hermit"
+enableEmoji = true
 
+[author]
+  name = "Martin Bjeldbak Madsen"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -10,6 +14,21 @@ theme = "hermit"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
+  homeSubtitle = "I write code for a living. Backend web developer."
+
   [[params.social]]
     name = "github"
     url = "https://github.com/martinbjeldbak"
+
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/martinbjeldbak"
+
+  [[params.social]]
+    name = "email"
+    url = "me@martinbjeldbak.com"
+
+  [[params.social]]
+    name = "instagram"
+    url = "https://www.instagram.com/martinbjeldbak/"
+
