@@ -3,3 +3,8 @@
   to = "https://martinbjeldbak.com"
   status = 200
   force = true
+
+[[redirects]]
+  from = "https://martinbjeldbak.com/cv.pdf"
+  to = "https://github.com/martinbjeldbak/CV/raw/master/MartinMadsenCV.pdf"
+  status = 302
