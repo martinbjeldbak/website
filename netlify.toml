@@ -5,6 +5,6 @@
   force = true
 
 [[redirects]]
-  from = "https://martinbjeldbak.com/cv.pdf"
+  from = "/cv.pdf"
   to = "https://github.com/martinbjeldbak/CV/raw/master/MartinMadsenCV.pdf"
   status = 302
