@@ -30,3 +30,6 @@ enableEmoji = true
     name = "instagram"
     url = "https://www.instagram.com/martinbjeldbak/"
 
+  [[params.social]]
+    name = "cv"
+    url = "https://github.com/martinbjeldbak/CV/raw/master/MartinMadsenCV.pdf"
