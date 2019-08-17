@@ -21,15 +21,19 @@ enableEmoji = true
   [[params.social]]
     name = "github"
     url = "https://github.com/martinbjeldbak"
+    title = "GitHub"
 
   [[params.social]]
     name = "linkedin"
     url = "https://www.linkedin.com/in/martinbjeldbak"
+    title = "LinkedIn"
 
   [[params.social]]
     name = "instagram"
     url = "https://www.instagram.com/martinbjeldbak/"
+    title = "Instagram"
 
   [[params.social]]
     name = "cv"
     url = "https://github.com/martinbjeldbak/CV/raw/master/MartinMadsenCV.pdf"
+    title = "CV"
