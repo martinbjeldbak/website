@@ -24,6 +24,11 @@ enableEmoji = true
     title = "GitHub"
 
   [[params.social]]
+    name = "cv"
+    url = "https://github.com/martinbjeldbak/CV/raw/master/MartinMadsenCV.pdf"
+    title = "CV"
+
+  [[params.social]]
     name = "linkedin"
     url = "https://www.linkedin.com/in/martinbjeldbak"
     title = "LinkedIn"
@@ -32,8 +37,3 @@ enableEmoji = true
     name = "instagram"
     url = "https://www.instagram.com/martinbjeldbak/"
     title = "Instagram"
-
-  [[params.social]]
-    name = "cv"
-    url = "https://github.com/martinbjeldbak/CV/raw/master/MartinMadsenCV.pdf"
-    title = "CV"
