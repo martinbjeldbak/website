@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/martinb
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://martinbjeldbak.com
+  * I am martinb (https://keybase.io/martinb) on keybase.
+  * I have a public key with fingerprint 6A5E A704 EDF5 7C46 6F85  0189 3D54 FD7F 2B8C D9E1
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101a32ce788ace1d45e5ea068d96fda725bb40f0f16bb4f8f65279f53eaf925ccad0a",
+      "fingerprint": "6a5ea704edf57c466f8501893d54fd7f2b8cd9e1",
+      "host": "keybase.io",
+      "key_id": "3d54fd7f2b8cd9e1",
+      "kid": "0101a32ce788ace1d45e5ea068d96fda725bb40f0f16bb4f8f65279f53eaf925ccad0a",
+      "uid": "9961b820bfc247e06f97887a2a9a9b00",
+      "username": "martinb"
+    },
+    "service": {
+      "hostname": "martinbjeldbak.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1567921245,
+  "expire_in": 157680000,
+  "prev": "b55984673858ebccef8774b2952a5b8701f22ae9346394da1f318e691e292e2b",
+  "seqno": 31,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMNDAnicrZJrTBRXFMeXimCxumwI0lBi6pRUIogzs/MEeZRowBKRLhoSC13vzNxh
+p8vurLsDgnRFICVImxoV16ZxRUncJqWkaUtUsG1cHgW7bAMibdoiSrWF2FDDFh+F
+VTtD2g9N+rH3y7333P//d885OQNrVuhiIrJ2P65PffeH6YiA31ulK1fayusQThZq
+kYw6xAqXN1gpQJditkoCkoGgGIoBI85DmmEADzGBICEJAUoxAkuJAqBxkuMIVERF
+jFIPIiNSJE6zImmEQGRxkueBgAIkDRElewV0OpySXVGxFFAhNEpAQSRpnqAokSFR
+jGGNAkmIAi3iHMMLLMRUo0V2aQ41OQ64YLokqzH1Yl5O7z/0/3PeVcs4lqUwjsFR
+TuRxgoYoJbIqmAY4YAHLoagmdEGnHdigqrYBpyLZOcSdhqjBaomHWl+1Qv4teFNt
+NQes6bxsUwEOp6zIvFypvlsUxeHK0PxKrUMzHICc+W+UmZPsgtpM1VENnS5JtiMZ
+mKrkFUljYyRFsziGE2QaAmsckhOaJU1B0hSDqkv7B1arSI4kWYagaCNDMpDjeSgy
+NE1wOEvigOQYGsVEHAeQNRKUkSUEgIlGjIEUi0GcxSHOIVpx++0ykmHE1DxBhcp0
+SRV2oFQ5IeLu85dF6iJidFErn9GmTBfzbOw/s9cxEatryW1enJWY3JzX9Av6xSqT
+ZM2fwu5aQoU/J2w692JO71rL1dAi4TR9E+vZllXcm3Uk8du6TzMLd21Gw/Vxb4+n
+pi+FuSMXbI3NrQ1Byne7tCAQWOWbzIp8Yfb3tq5rSw+pL6Ngt9W8Y8eQ66XpUze6
+N+0bS5xNl272LG447JkpHjzbvsCnPK6ZG791feXs/ePKPH2oqTauo/82KOPlG2b8
+q+3t7w/+sqbAlNkeakUPGQq5ZDD0XVg+FvPbLV9e/NTCcPyVjyyfpDTuCZflN294
+42nwyoI5+Mf3yYp88XrBfDaR5J9sa0WCD4o+3s0HKHcL1ahzNydEbl+PjCqBRxe+
+dq8fM1nLjF1JodSRe3094ZMlUdKfw2x044Nsw/ky88u9B++39+Uai49+dmArPmmV
+Nh7vYHcm7dlbezmqu/KSYS76zAyxpWGkxItWjhpybnqLe4Kvgx/vjmV3hrr3nS3N
+vXjN503c71l3elvkKfPMMOe1hV2pK0oexSnYPalm7UToPX3R08tbj9W4V+U9cXWN
+J+Gjr/zkSUFP+yXLq8+fPNGZl9aQeK7/jD8/LW5gr6FP/3Do8wRygPd2bp5quOP5
+lcrsKT2x5B180nL+HVh1eJ3lUnnx6sx4Yt4XPadv8Zue033xgaGxCByc2NWaPNL5
+4didLU2lTVffivbVT/cjq/8CFCvIgQ==
+=hgxS
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/martinb
+
+==================================================================
