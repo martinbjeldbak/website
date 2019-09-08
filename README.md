@@ -4,3 +4,17 @@
 
 My website, created using the [Hugo](https://gohugo.io) framework.
 
+## Deployment
+
+Deployment happens on commits to master via Netlify.
+
+
+## Updating dependencies
+
+To update the theme follow [this](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify) guide. Alternatively the gist of it is
+
+```sh
+$ git submodule update --rebase --remote
+```
+
+Then, commit the changes made.
