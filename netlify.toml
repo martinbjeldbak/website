@@ -1,7 +1,7 @@
 [[redirects]]
   from = "https://martinbjeldbak.netlify.com"
   to = "https://martinbjeldbak.com"
-  status = 200
+  status = 302
   force = true
 
 [[redirects]]
