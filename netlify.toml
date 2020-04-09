@@ -1,3 +1,6 @@
+[context.production.environment]
+  HUGO_VERSION = "0.68.3"
+
 [[redirects]]
   from = "https://martinbjeldbak.netlify.com"
   to = "https://martinbjeldbak.com"
