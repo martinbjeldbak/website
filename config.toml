@@ -25,7 +25,7 @@ enableEmoji = true
 
   [[params.social]]
     name = "cv"
-    url = "https://github.com/martinbjeldbak/CV/raw/master/MartinMadsenCV.pdf"
+    url = "/cv.pdf"
     title = "CV"
 
   [[params.social]]
