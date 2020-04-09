@@ -6,7 +6,7 @@ My website, created using the [Hugo](https://gohugo.io) framework.
 
 ## Deployment
 
-Deployment happens on commits to master via Netlify.
+Deployment happens on commits to `master` via Netlify. See documentation on this [here](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/).
 
 
 ## Updating dependencies
@@ -18,3 +18,18 @@ $ git submodule update --rebase --remote
 ```
 
 Then, commit the changes made.
+
+## Development
+
+Install hugo with
+
+```sh
+brew install hugo
+```
+
+You can now run the development server with
+
+```sh
+hugo server
+```
+
