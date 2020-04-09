@@ -13,6 +13,6 @@
 
 [[redirects]]
   from = "/cv.pdf"
-  to = "https://github.com/martinbjeldbak/CV/raw/master/MartinMadsenCV.pdf"
+  to = "https://github.com/martinbjeldbak/CV/blob/master/MartinMadsenCV.pdf"
   status = 302
   force = true
