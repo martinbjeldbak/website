@@ -1,3 +1,4 @@
+# Optional configuration file to sync terraform state remotely
 terraform {
   backend "s3" {
     bucket         = "martinbjeldbak-terraform-state"
