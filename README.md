@@ -18,6 +18,12 @@ individual GitHub account (only organizations), so to provide Netlify access to 
 key needs to be copied from Netlify into the GitHub repository's deploy keys section. Netlify's
 public key can be found in the UI via the `Settings -> Build & Deploy -> Deploy key` section.
 
+To view the plan to create the Netlify site with a custom domain, run the below command
+
+```sh
+$ terraform plan -var-file="sensitive.tfvars"
+```
+
 
 ## Updating dependencies
 
