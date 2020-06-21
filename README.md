@@ -9,6 +9,16 @@ My website, created using the [Hugo](https://gohugo.io) framework.
 Deployment happens on commits to `master` via Netlify. See documentation on this [here](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/).
 
 
+## Infrastructure
+
+Currently managed via Terraform. See terraform files in repository.
+
+* Terraform's GitHub provider does not currently support generating deploy keys on an
+individual GitHub account (only organizations), so to provide Netlify access to the repository, the Netlify deploy SSH
+key needs to be copied from Netlify into the GitHub repository's deploy keys section. Netlify's
+public key can be found in the UI via the `Settings -> Build & Deploy -> Deploy key` section.
+
+
 ## Updating dependencies
 
 To update the theme follow [this](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify) guide. Alternatively the gist of it is
