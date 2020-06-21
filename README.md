@@ -14,9 +14,10 @@ Deployment happens on commits to `master` via Netlify. See documentation on this
 Currently managed via Terraform. See terraform files in repository.
 
 * Terraform's GitHub provider does not currently support generating deploy keys on an
-individual GitHub account (only organizations), so to provide Netlify access to the repository, the Netlify deploy SSH
-key needs to be copied from Netlify into the GitHub repository's deploy keys section. Netlify's
-public key can be found in the UI via the `Settings -> Build & Deploy -> Deploy key` section.
+individual GitHub account (only organizations), so to provide Netlify access to the repository,
+the Netlify deploy SSH key needs to be copied from Netlify into the GitHub repository's deploy
+keys section. Netlify's public key can be found in the UI via the
+`Settings -> Build & Deploy -> Deploy key` section.
 
 To view the plan to create the Netlify site with a custom domain, run the below command
 
