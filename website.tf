@@ -13,7 +13,7 @@ resource "netlify_site" "martinbjeldbak-com" {
     repo_branch   = "master"
     command       = "hugo --gc"
     deploy_key_id = netlify_deploy_key.key.id
-    dir           = "build"
+    dir           = "public"
     provider      = "github"
     repo_path     = var.repository_path
   }
