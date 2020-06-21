@@ -6,7 +6,7 @@ provider "netlify" {
 resource "netlify_deploy_key" "key" {}
 
 resource "netlify_site" "martinbjeldbak-com" {
-  name = "martinbjeldbak-v2"
+  name = var.netlify_site_name
   custom_domain = var.website_domain
 
   repo {

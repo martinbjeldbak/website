@@ -8,3 +8,7 @@ variable "website_domain" {
 variable "repository_path" {
   default = "martinbjeldbak/website"
 }
+
+variable "netlify_site_name" {
+  default = "martinbjeldbak"
+}
