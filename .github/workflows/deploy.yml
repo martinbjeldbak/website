@@ -1,0 +1,18 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - master
+      - terraform-and-github-actions # remove me once merged
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
