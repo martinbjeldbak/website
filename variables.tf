@@ -1,0 +1,2 @@
+variable "netlify_token" {
+}
