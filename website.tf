@@ -7,6 +7,7 @@ resource "netlify_deploy_key" "key" {}
 
 resource "netlify_site" "martinbjeldbak-com" {
   name = "martinbjeldbak-v2"
+  custom_domain = var.website_domain
 
   repo {
     repo_branch   = "master"
@@ -14,6 +15,6 @@ resource "netlify_site" "martinbjeldbak-com" {
     deploy_key_id = netlify_deploy_key.key.id
     dir           = "build"
     provider      = "github"
-    repo_path     = "martinbjeldbak/website"
+    repo_path     = var.repository_path
   }
 }
