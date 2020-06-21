@@ -40,7 +40,7 @@ Then, commit the changes made.
 Install hugo with
 
 ```sh
-brew install hugo
+brew install hugo terraform
 ```
 
 You can now run the development server with
