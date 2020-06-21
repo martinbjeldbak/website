@@ -1,6 +1,6 @@
 # Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6d470199-21c2-4c1b-8150-c50946292ccf/deploy-status)](https://app.netlify.com/sites/martinbjeldbak/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9c62e30d-74f1-4506-90cf-090cdf66b078/deploy-status)](https://app.netlify.com/sites/martinbjeldbak-v2/deploys)
 
 My website, created using the [Hugo](https://gohugo.io) framework.
 
