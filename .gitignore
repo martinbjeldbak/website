@@ -1,5 +1,10 @@
 public
 
+### Hugo ###
+# Generated files by hugo
+/public/
+/resources/_gen/
+
 # Local .terraform directories
 **/.terraform/*
 
