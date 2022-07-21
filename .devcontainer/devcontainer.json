@@ -23,13 +23,12 @@
 		// Configure properties specific to VS Code.
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
-			"settings": { 
+			"settings": {
 				"html.format.templating": true
 			},
-			
+
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
-				"bungcip.better-toml",
 				"davidanson.vscode-markdownlint"
 			]
 		}

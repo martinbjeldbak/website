@@ -8,7 +8,7 @@ Deployment happens on commits to `master`.
 
 ## Updating dependencies
 
-To update the theme follow [this](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify) guide. Alternatively the gist of it is
+Ensure submodules are pulled, such as themes in the `themes/` folder.
 
 ```sh
 $ git submodule update --rebase --remote
@@ -29,4 +29,3 @@ You can now run the development server with
 ```sh
 hugo server
 ```
-
