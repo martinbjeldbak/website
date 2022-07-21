@@ -61,9 +61,9 @@ params:
     imageWidth: 120
     imageHeight: 120
     imageTitle: Picture of me (martin)
-    buttons:
-      - name: Posts
-        url: posts
+    # buttons:
+    #   - name: Posts
+    #     url: posts
 
   # home-info mode
   homeInfoParams:
@@ -95,14 +95,10 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: about
-      name: about
-      url: /about/
-      weight: 20
-    - identifier: blog
-      name: blog
-      url: /posts/
-      weight: 20
+    #- identifier: blog
+    #  name: blog
+    #  url: /posts/
+    #  weight: 20
     - identifier: CV
       name: vitae
       url: https://github.com/martinbjeldbak/CV/blob/master/MartinMadsenCV.pdf
