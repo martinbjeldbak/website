@@ -1,5 +1,7 @@
 public
 
+.hugo_build.lock
+
 ### Hugo ###
 # Generated files by hugo
 /public/
