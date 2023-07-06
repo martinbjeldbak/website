@@ -1,6 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import BlogPost from '../components/BlogPost.astro';
+
+import { getCollection } from 'astro:content';
+
+const blogEntries = await getCollection('blog');
+
 ---
 
 <Layout title="Welcome to Astro.">
@@ -32,7 +38,14 @@ import Card from '../components/Card.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
-	</main>
+</main>
+  <ul>
+    {blogEntries.map(blogPostEntry => (
+      <li>
+        <BlogPost slug={blogPostEntry.slug} title={blogPostEntry.data.title} />
+      </li>
+    ))}
+  </ul>
 </Layout>
 
 <style>
