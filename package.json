@@ -20,6 +20,7 @@
     "xo": "^0.54.2"
   },
   "xo": {
+    "space": true,
     "rules": {
       "n/file-extension-in-import": "off"
     }
