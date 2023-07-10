@@ -1,20 +1,26 @@
-<header class="w-full dark:bg-slate-900/75">
+---
+import ThemeIcon from './ThemeIcon.astro'
+---
+<header class="w-full dark:bg-indigo-950/75">
   <div class="mx-auto">
-    <div class="py-4 border-b border-slate-900/10 lg:px-8 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0">
+    <div class="py-4 border-b border-indigo-950/10 lg:px-8 lg:border-0 dark:border-indigo-300/10 mx-4 lg:mx-0">
       <div class="relative flex items-center">
-        <nav class="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
+        <nav class="text-sm leading-6 font-semibold text-indigo-700 dark:text-indigo-400">
           <ul class="flex space-x-5">
             <li>
-              <a class="hover:text-sky-500 dark:hover:text-sky-400" href="/">Martin Bjeldbak Madsen</a>
+              <a class="text-indigo-200 hover:text-indigo-500 dark:hover:text-indigo-100" href="/">Martin Bjeldbak Madsen</a>
             </li>
             <li>
-              <a class="hover:text-sky-500 dark:hover:text-sky-400" href="/about">About</a>
+              <a class="hover:text-indigo-500 dark:hover:text-indigo-400" href="/about">About</a>
             </li>
             <li>
-              <a class="hover:text-sky-500 dark:hover:text-sky-400" href="/">Blog</a>
+              <a class="hover:text-indigo-500 dark:hover:text-indigo-400" href="/">Blog</a>
             </li>
           </ul>
         </nav>
+          <div class="flex items-center border-1 border-indigo-200 ml-6 dark:border-indigo-800">
+            <ThemeIcon />
+          </div>
       </div>
     </div>
   </div>
