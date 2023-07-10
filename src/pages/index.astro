@@ -39,9 +39,9 @@ const blogEntries = await getCollection('blog');
 			/>
 		</ul>
 </main>
-  <ul>
+  <ul role="list" class="p-6 divide-y divide-slate-200">
     {blogEntries.map(blogPostEntry => (
-      <li>
+      <li class="flex py-4 first:pt-0 last:pb-0">
         <BlogPost slug={blogPostEntry.slug} title={blogPostEntry.data.title} />
       </li>
     ))}
