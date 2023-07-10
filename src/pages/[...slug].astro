@@ -18,7 +18,7 @@ const { Content } = await entry.render();
   <article>
     <h1>{entry.data.title}<h1>
       <div>
-        <time datetime={formatISO(entry.data.publishDate, {representation: 'date' })}>{format(entry.data.publishDate, 'MMMM yyyy')}</time>
+        <time datetime={formatISO(entry.data.pubDate, {representation: 'date' })}>{format(entry.data.pubDate, 'MMMM yyyy')}</time>
       </div>
 
       <Content />

@@ -52,3 +52,11 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## TODO
+
+- Favicon
+- Add cloudflare https://docs.astro.build/en/guides/integrations-guide/cloudflare/
+- Add https://docs.astro.build/en/guides/integrations-guide/sitemap/
+- Add https://github.com/alextim/astro-lib/tree/main/packages/astro-robots-txt#readme
+
