@@ -3,6 +3,8 @@ export interface Props {
 	title: string;
 }
 
+const description = "Personal website and blog of Martin Bjeldbak Madsen about computers, books, ideas, running, and whatever else I find interesting"
+
 const { title } = Astro.props;
 import Header from '../components/Header.astro';
 ---
@@ -11,7 +13,7 @@ import Header from '../components/Header.astro';
 <html lang="en" class="dark">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
+		<meta name="description" content={description}>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
