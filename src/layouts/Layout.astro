@@ -19,12 +19,14 @@ import Header from '../components/Header.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="text-indigo-500 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950">
+	<body class="text-indigo-500 dark:text-indigo-400 min-h-screen bg-indigo-50 dark:bg-indigo-950">
     <Header />
 		<slot />
 	</body>
 </html>
+
 <style is:global>
+  /* TODO: remove */
 	:root {
 		--accent: 124, 58, 237;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
@@ -33,6 +35,7 @@ import Header from '../components/Header.astro';
 		font-family: system-ui, sans-serif;
 		background-color: #F6F6F6;
 	}
+  /* TODO: end remove */
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
