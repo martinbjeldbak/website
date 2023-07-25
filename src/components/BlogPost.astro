@@ -1,11 +1,26 @@
 ---
+import type { CollectionEntry } from 'astro:content';
+import { format, formatISO } from 'date-fns';
 interface Props {
-  slug: string;
-  title: string;
+  post:  CollectionEntry<'blog'>;
 }
 
-const { slug, title } = Astro.props;
+const { post } = Astro.props;
 ---
 
-<a class="hover:text-indigo-500 dark:hover:text-indigo-400" href={slug}>
-  {title}</a>
+<article>
+  <div class="flex">
+    <div class="w-2/3 text-xl">
+      <a class="hover:text-indigo-200 dark:hover:text-indigo-200" href={post.slug}>
+        {post.data.title}
+      </a>
+    </div>
+
+    <div class="w-1/3 text-end text-indigo-500">
+    <time datetime={formatISO(post.data.pubDate, {representation: 'date' })}>{format(post.data.pubDate, 'MMMM yyyy')}</time>
+      </div>
+  </div>
+</article>
+
+
+

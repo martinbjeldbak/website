@@ -1,43 +1,51 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 
-const description = "Personal website and blog of Martin Bjeldbak Madsen about computers, books, ideas, running, and whatever else I find interesting"
+const description =
+  "Personal website and blog of Martin Bjeldbak Madsen about computers, books, ideas, running, and whatever else I find interesting";
 
 const { title } = Astro.props;
-import Header from '../components/Header.astro';
+import Header from "../components/Header.astro";
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="dark">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={description}>
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="text-indigo-500 dark:text-indigo-400 min-h-screen bg-indigo-50 dark:bg-indigo-950">
-    <Header />
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body
+    class="flex flex-col text-indigo-500 dark:text-indigo-400 min-h-screen bg-indigo-50 dark:bg-indigo-950 antialiased"
+  >
+      <Header />
+      <slot />
+  </body>
 </html>
 
 <style is:global>
   /* TODO: remove */
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
-	}
+  :root {
+    --accent: 124, 58, 237;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      #da62c4 30%,
+      white 60%
+    );
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background-color: #f6f6f6;
+  }
   /* TODO: end remove */
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
+  code {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  }
 </style>

@@ -1,12 +1,12 @@
 ---
 import ThemeIcon from './ThemeIcon.astro'
+import RssIcon from './RssIcon.astro'
 ---
-<header class="w-full dark:bg-indigo-950/75">
-  <div class="mx-auto">
-    <div class="py-4 border-b border-indigo-950/10 lg:px-8 lg:border-0 dark:border-indigo-300/10 mx-4 lg:mx-0">
+<header class="w-full flex justify-center dark:bg-indigo-950/75">
+    <div class="py-4 lg:px-8 lg:border-0 dark:border-indigo-300/10 mx-4 lg:mx-0">
       <div class="relative flex items-center">
         <nav class="text-sm leading-6 font-semibold text-indigo-700 dark:text-indigo-400">
-          <ul class="flex space-x-5">
+          <ul class="flex flex-row space-x-5">
             <li>
               <a class="text-indigo-200 hover:text-indigo-500 dark:hover:text-indigo-100" href="/">Martin Bjeldbak Madsen</a>
             </li>
@@ -16,8 +16,8 @@ import ThemeIcon from './ThemeIcon.astro'
             <li>
               <a class="hover:text-indigo-500 dark:hover:text-indigo-400" href="/">Blog</a>
             </li>
-            <li>
-              <a class="hover:text-indigo-500 dark:hover:text-indigo-400" href="/rss.xml">RSS</a>
+            <li class="hidden md:block">
+              <a class="hover:text-indigo-500 dark:hover:text-indigo-400" href="/rss.xml"><RssIcon /></a>
             </li>
           </ul>
         </nav>
@@ -26,5 +26,4 @@ import ThemeIcon from './ThemeIcon.astro'
           </div>
       </div>
     </div>
-  </div>
 </header>
