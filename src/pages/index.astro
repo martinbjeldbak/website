@@ -10,18 +10,16 @@ const blogEntries = await getCollection("blog");
 
 <Layout title="Martin Madsen | martinbjeldbak">
   <main class="flex-1">
-    <section>
-      <ul role="list" class="flex flex-col space-y-5 p-6 divide-y divide-slate-200">
-        {
-          blogEntries.map((blogPostEntry) => (
-            <li class="py-4 first:pt-0 last:pb-0">
-              <BlogPost
-                post={blogPostEntry}
-              />
-            </li>
-          ))
-        }
-      </ul>
-    </section>
+    <ul role="list" class="flex flex-col space-y-5 p-6 divide-y divide-slate-200">
+      {
+      blogEntries.map((blogPostEntry) => (
+        <li class="py-4 first:pt-0 last:pb-0">
+          <BlogPost
+            post={blogPostEntry}
+          />
+        </li>
+      ))
+      }
+    </ul>
   </main>
 </Layout>
