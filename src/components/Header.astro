@@ -2,28 +2,25 @@
 import ThemeIcon from './ThemeIcon.astro'
 import RssIcon from './RssIcon.astro'
 ---
-<header class="w-full flex justify-center dark:bg-indigo-950/75">
-    <div class="py-4 lg:px-8 lg:border-0 dark:border-indigo-300/10 mx-4 lg:mx-0">
-      <div class="relative flex items-center">
-        <nav class="text-sm leading-6 font-semibold text-indigo-700 dark:text-indigo-400">
-          <ul class="flex flex-row space-x-5">
-            <li>
-              <a class="text-indigo-200 hover:text-indigo-500 dark:hover:text-indigo-100" href="/">Martin Bjeldbak Madsen</a>
-            </li>
-            <li>
-              <a class="hover:text-indigo-500 dark:hover:text-indigo-400" href="/about">About</a>
-            </li>
-            <li>
-              <a class="hover:text-indigo-500 dark:hover:text-indigo-400" href="/">Blog</a>
-            </li>
-            <li class="hidden md:block">
-              <a class="hover:text-indigo-500 dark:hover:text-indigo-400" href="/rss.xml"><RssIcon /></a>
-            </li>
-          </ul>
-        </nav>
-          <div class="flex items-center border-1 border-indigo-200 ml-6 dark:border-indigo-800">
-            <ThemeIcon />
-          </div>
-      </div>
-    </div>
+<header class="py-4 lg:px-8 flex items-center justify-center dark:bg-indigo-950/75">
+  <div class="flex-1"></div>
+  <nav class="text-sm leading-6 font-semibold text-indigo-700 dark:text-indigo-400">
+    <ul class="flex flex-row space-x-5">
+      <li>
+        <a class="text-indigo-200 hover:text-indigo-500 dark:hover:text-indigo-100" href="/">Martin Bjeldbak Madsen</a>
+      </li>
+      <li>
+        <a class="hover:text-indigo-500 dark:hover:text-indigo-400" href="/about">About</a>
+      </li>
+      <li>
+        <a class="hover:text-indigo-500 dark:hover:text-indigo-400" href="/">Blog</a>
+      </li>
+      <li class="hidden sm:block">
+        <a class="hover:text-indigo-500 dark:hover:text-indigo-400" href="/rss.xml"><RssIcon /></a>
+      </li>
+    </ul>
+  </nav>
+  <div class="flex-1 flex justify-end px-5">
+    <ThemeIcon />
+  </div>
 </header>
