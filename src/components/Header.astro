@@ -2,8 +2,7 @@
 import ThemeIcon from './ThemeIcon.astro'
 import RssIcon from './RssIcon.astro'
 ---
-<header class="py-4 lg:px-8 flex items-center justify-center dark:bg-indigo-950/75">
-  <div class="flex-1"></div>
+<header class="px-20 dark:bg-indigo-950/75 flex items-center justify-between w-full h-12">
   <nav class="text-sm leading-6 font-semibold text-indigo-700 dark:text-indigo-400">
     <ul class="flex flex-row space-x-5">
       <li>
@@ -20,7 +19,5 @@ import RssIcon from './RssIcon.astro'
       </li>
     </ul>
   </nav>
-  <div class="flex-1 flex justify-end px-5">
-    <ThemeIcon />
-  </div>
+  <ThemeIcon />
 </header>

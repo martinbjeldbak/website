@@ -1,4 +1,5 @@
 ---
+import { getEntry } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import { format, formatISO } from 'date-fns';
 interface Props {
@@ -6,19 +7,24 @@ interface Props {
 }
 
 const { post } = Astro.props;
+const entry = await getEntry('blog', post.slug);
+const { Content, headings } = await entry.render();
+
 ---
 
-<article class="flex flex-row justify-between">
-  <div class="text-2xl">
-    <a class="hover:text-indigo-200 dark:hover:text-indigo-200" href={post.slug}>
-      {post.data.title}
-    </a>
-  </div>
+<article class="space-y-4 max-w-md mx-auto">
+  <header>
+    <h1 class="text-2xl font-bold leading-tight hover:underline no-underline">
+      <a class="hover:text-indigo-200 dark:hover:text-indigo-200" href={post.slug}>
+        {post.data.title}
+      </a>
+    </h1>
+    <h3 class="text-base text-indigo-500">
+      <time datetime={formatISO(post.data.pubDate, {representation: 'date' })}>{format(post.data.pubDate, 'd MMMM, yyyy')}</time>
+    </h3>
+  </header>
 
-  <div class="text-base text-end text-indigo-500">
-    <time datetime={formatISO(post.data.pubDate, {representation: 'date' })}>{format(post.data.pubDate, 'MMMM yyyy')}</time>
-  </div>
+  <section>
+    <Content />
+  </section>
 </article>
-
-
-
