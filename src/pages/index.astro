@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import BlogPost from "../components/BlogPost.astro";
 
 import { getCollection } from "astro:content";
@@ -11,13 +10,7 @@ const blogEntries = await getCollection("blog");
 <Layout title="Martin Madsen | martinbjeldbak">
   <main class="flex-1 my-10">
     <div class="space-y-12">
-      {
-      blogEntries.map((blogPostEntry) => (
-        <BlogPost
-          post={blogPostEntry}
-        />
-      ))
-      }
+      {blogEntries.map((blogPostEntry) => <BlogPost post={blogPostEntry} />)}
     </div>
   </main>
 </Layout>
