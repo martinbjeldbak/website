@@ -55,6 +55,7 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## TODO
 
+- Add bold to curent page in header
 - Favicon
 - Add cloudflare https://docs.astro.build/en/guides/integrations-guide/cloudflare/
 - Add https://docs.astro.build/en/guides/integrations-guide/sitemap/
