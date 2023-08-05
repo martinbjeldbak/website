@@ -8,7 +8,7 @@ const blogEntries = await getCollection("blog");
 ---
 
 <Layout title="Martin Madsen | martinbjeldbak">
-  <main class="flex-1 my-10">
+  <main class="flex-auto my-10">
     <div class="space-y-12">
       {blogEntries.map((blogPostEntry) => <BlogPost post={blogPostEntry} />)}
     </div>
