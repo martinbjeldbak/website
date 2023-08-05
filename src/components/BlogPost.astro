@@ -8,13 +8,13 @@ interface Props {
 
 const { post } = Astro.props;
 const entry = await getEntry('blog', post.slug);
-const { Content, headings } = await entry.render();
+const { Content } = await entry.render();
 
 ---
 
 <article class="space-y-4 max-w-md mx-auto">
   <header>
-    <h1 class="text-2xl font-bold leading-tight hover:underline no-underline">
+    <h1 class="md:text-4xl lg:text-5xl font-bold leading-tight hover:underline no-underline">
       <a class="hover:text-indigo-200 dark:hover:text-indigo-200" href={post.slug}>
         {post.data.title}
       </a>
@@ -24,7 +24,7 @@ const { Content, headings } = await entry.render();
     </h3>
   </header>
 
-  <section>
+  <section class="prose prose-indigo md:prose-lg lg:prose-xl dark:prose-invert hover:prose-a:text-indigo-50">
     <Content />
   </section>
 </article>
