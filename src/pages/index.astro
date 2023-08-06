@@ -8,11 +8,9 @@ const blogEntries = await getCollection("blog");
 ---
 
 <Layout title="Martin Madsen | martinbjeldbak">
-  <main class="flex-auto my-10">
-    <div class="space-y-12">
+    <main class="space-y-4">
       <ul>
         {blogEntries.map((post) => <BlogPostItem url={"/" + post.slug} title={post.data.title} />)}
       </ul>
-    </div>
   </main>
 </Layout>
