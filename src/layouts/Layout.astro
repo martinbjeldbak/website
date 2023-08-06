@@ -1,0 +1,32 @@
+---
+export interface Props {
+  title: string;
+  favicon?: string;
+}
+
+const description =
+  "Personal website and blog of Martin Bjeldbak Madsen about computers, books, ideas, running, and whatever else I find interesting";
+
+const { title, favicon = "/favicon.svg" } = Astro.props;
+
+
+import Header from "../components/Header.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href={favicon} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body
+    class="flex flex-col text-indigo-500 dark:text-indigo-400 min-h-screen bg-indigo-50 dark:bg-indigo-950 antialiased max-w-prose mx-auto"
+  >
+      <Header />
+      <slot />
+  </body>
+</html>

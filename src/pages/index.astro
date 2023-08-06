@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BlogPostItem from "../components/BlogPostItem.astro";
+
+import { getCollection } from "astro:content";
+
+const blogEntries = await getCollection("blog");
+---
+
+<Layout title="Martin Madsen | martinbjeldbak">
+    <main>
+      <ul class="text-indigo-800 dark:text-indigo-200">
+        {blogEntries.map((post) => <BlogPostItem url={"/" + post.slug} title={post.data.title} pubDate={ post.data.pubDate} />)}
+      </ul>
+  </main>
+</Layout>

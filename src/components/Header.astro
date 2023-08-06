@@ -1,0 +1,82 @@
+---
+import ThemeIcon from "./ThemeIcon.astro";
+import RssIcon from "./RssIcon.astro";
+import GitHubIcon from "./GitHubIcon.astro";
+import Envelope from "./Envelope.astro";
+import DocumentText from "./DocumentText.astro"
+import LinkedIn from "./LinkedIn.astro";
+
+const currentPath = Astro.url.pathname;
+
+---
+
+<header
+  class="dark:bg-indigo-950/75 flex flex-col justify-center h-20 space-y-1"
+>
+  <div class="flex items-center justify-between">
+    <nav
+      class="text-sm leading-6 font-semibold text-indigo-700 dark:text-indigo-400"
+    >
+      <ul class="flex flex-row space-x-5 items-center fill-indigo-500 dark:fill-indigo-400">
+        <li>
+          <a
+            class="font-semibold text-indigo-700 dark:text-indigo-50 hover:text-indigo-500 dark:hover:text-indigo-100 hover:underline"
+            href="/">Martin Bjeldbak Madsen</a
+          >
+        </li>
+        <li>
+          <a
+            class={(currentPath == "/about" ? "font-bold " : "") + "hover:text-indigo-500 dark:hover:text-indigo-600 hover:underline"}
+            href="/about">About</a
+          >
+        </li>
+        <li>
+          <a
+            class={(currentPath == "/" ? "font-bold " : "") + "hover:text-indigo-500 dark:hover:text-indigo-600 hover:underline"}
+            href="/">Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/martinbjeldbak"
+            target="_blank"
+            title="GitHub"
+          >
+            <div class="w-5 h-5">
+              <GitHubIcon />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/martinbjeldbak"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <div class="w-5 h-5">
+              <LinkedIn />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:me@martinbjeldbak.com"
+            target="_blank"
+            title="Email me"
+          >
+            <div class="w-5 h-5">
+              <Envelope />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            class="hover:text-indigo-500 dark:hover:text-indigo-600"
+            href="/rss.xml"><RssIcon /></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <ThemeIcon />
+  </div>
+</header>
