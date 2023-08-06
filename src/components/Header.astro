@@ -5,6 +5,9 @@ import GitHubIcon from "./GitHubIcon.astro";
 import Envelope from "./Envelope.astro";
 import DocumentText from "./DocumentText.astro"
 import LinkedIn from "./LinkedIn.astro";
+
+const currentPath = Astro.url.pathname;
+
 ---
 
 <header
@@ -17,24 +20,25 @@ import LinkedIn from "./LinkedIn.astro";
       <ul class="flex flex-row space-x-5 items-center fill-indigo-500 dark:fill-indigo-400">
         <li>
           <a
-            class="font-semibold text-indigo-700 dark:text-indigo-50 hover:text-indigo-500 dark:hover:text-indigo-100"
+            class="font-semibold text-indigo-700 dark:text-indigo-50 hover:text-indigo-500 dark:hover:text-indigo-100 hover:underline"
             href="/">Martin Bjeldbak Madsen</a
           >
         </li>
         <li>
           <a
-            class="hover:text-indigo-500 dark:hover:text-indigo-400"
+            class={(currentPath == "/about" ? "font-bold " : "") + "hover:text-indigo-500 dark:hover:text-indigo-600 hover:underline"}
             href="/about">About</a
           >
         </li>
         <li>
-          <a class="hover:text-indigo-500 dark:hover:text-indigo-400" href="/"
-            >Blog</a
+          <a
+            class={(currentPath == "/" ? "font-bold " : "") + "hover:text-indigo-500 dark:hover:text-indigo-600 hover:underline"}
+            href="/">Blog</a
           >
         </li>
         <li>
           <a
-            class="hover:text-indigo-500 dark:hover:text-indigo-400"
+            class="hover:text-indigo-500 dark:hover:text-indigo-600"
             href="/rss.xml"><RssIcon /></a
           >
         </li>
