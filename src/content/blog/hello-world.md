@@ -3,18 +3,18 @@ title: Hello World from Astro Components
 categories: [thoughts]
 pubDate: 2023-07-06
 relatedPosts: []
-draft: true
+draft: false
 ---
 
 This is the first post documenting moving my site from a static-built Hugo site
-with no content or blog, to [Astro]. Make no mistake: it's still boring.
+with no content or blog, to [Astro]. Make no mistake: it's still (intentionally) boring.
 
 Instead of picking a pre-built theme as with my previous setup, I've built it from
-scratch as a learning experience. Everything is public on my GitHub at
+scratch as a learning experience in order to learn CSS flexbox. Everything is public on my GitHub at
 [martinbjeldbak/website]. It's built with
 
 - [Astro]
-- [Tailwindcss]
+- [TailwindCSS]
 - [Cloudflare Pages]
 - [heroicons] and [Simple Icons] for SVG-based icons
 
@@ -23,7 +23,7 @@ Below are some reasonings behind the transition.
 ## Inspiration
 
 Recently I've been inspired to write more publicly. I think this is due to having
-written for myself the last couple of years using [Obsidian] and its daily journaling,
+written for myself the last couple of years using [Obsidian] and its daily journaling plugin,
 which is now a habit that has really sunk in.
 
 I just want a place where I can write some simple posts in markdown and publish
@@ -48,8 +48,9 @@ official Astro one is by far the best I've found. They also have a great guide
 that shows everything off [here][4] which will end you up with a new blog site,
 which I based this new site on, though with "Content Collections" rather than markdown layouts.
 
-[TailwindCSS] is the current CSS framework of choice for many projects, and I now
-see why. As a primarily backend developer, I've had minimal exposure to CSS, making
+[TailwindCSS] is the hottest new tool these days, and I now
+see why. I have not written a single custom class or written any manual CSS to
+build this site, and I couldn't be happier. As a primarily backend developer, I've had minimal exposure to CSS, making
 me a complete beginner. It only took me a couple of hours to get this site up and
 running in a relatively readable state. Don't get me wrong - it's still pretty rough. I'm working on it!
 As far as Tailwind component libraries are concerned, it's not needed for a simple
@@ -57,7 +58,8 @@ blog in my opinion. I find [Skeleton] really interesting. I'll likely
 use it in the next side project.
 
 [Cloudflare Pages] was also used before, so to keep changes minimal, I'll keep
-deploying there. It has great features like automatic deployments from GitHub,
+deploying there. It has [native support][astrocloudflare] for deploying Astro
+applications, only taking a few clicks to change from Hugo. Also, Cloudflare has great features like automatic deployments from GitHub,
 but Fireship also talks a lot about [Vercel], so I'm considering this too!
 
 ## Performance
@@ -67,11 +69,8 @@ TODO
 ## Thoughts
 
 Building this website with simple Tailwind components and the simplicity of Astro
-has been heaps of fun.
-
-Learning more CSS has always been something I've wanted to do, and what better way
+has been heaps of fun. Learning more CSS has always been something I've wanted to do, and what better way
 than to start from simple components.
-
 
 This will be a constant journey and I'll be tweaking away over the coming months
 and experiment with new technologies and topics.
@@ -95,3 +94,4 @@ Ok Bye!
 [heroicons]: https://heroicons.com/
 [Simple Icons]: https://simpleicons.org/
 [martinbjeldbak/website]: https://github.com/martinbjeldbak/website
+[astrocloudflare]: https://docs.astro.build/en/guides/deploy/cloudflare/
