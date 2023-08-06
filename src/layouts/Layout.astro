@@ -1,16 +1,17 @@
 ---
 export interface Props {
-  title: string;
+  title?: string;
   favicon?: string;
 }
 
 const description =
   "Personal website and blog of Martin Bjeldbak Madsen about computers, books, ideas, running, and whatever else I find interesting";
 
-const { title, favicon = "/favicon.svg" } = Astro.props;
+const { title = "Martin Madsen", favicon = "/favicon.svg" } = Astro.props;
 
 
 import Header from "../components/Header.astro";
+import { SEO } from "astro-seo";
 ---
 
 <!DOCTYPE html>
@@ -22,6 +23,15 @@ import Header from "../components/Header.astro";
     <link rel="icon" type="image/svg+xml" href={favicon} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <SEO
+      title={title}
+      titleDefault={title}
+      description={description}
+      charset="utf-8"
+      twitter={{
+        creator: "@martinbjeldbak"
+      }}
+    />
   </head>
   <body
     class="flex flex-col text-indigo-500 dark:text-indigo-400 min-h-screen bg-indigo-50 dark:bg-indigo-950 antialiased max-w-prose mx-auto"
