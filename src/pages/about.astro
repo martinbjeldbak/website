@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import MarkdownLayout from "../layouts/MarkdownLayout.astro";
 
-import { Content } from "../pages/about.md";
+import { Content } from "./_about.md";
 ---
 
 <Layout title="About Martin" favicon="/dk.svg">
@@ -13,8 +13,8 @@ import { Content } from "../pages/about.md";
   />
 
   <div class="my-16">
-    test
     <MarkdownLayout>
+      <Content />
     </MarkdownLayout>
   </div>
 
