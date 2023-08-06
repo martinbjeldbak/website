@@ -63,4 +63,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 - Add post first xxx words to index, add "continue reading" if longer. This will make my index look more filled out
 - Add https://docs.astro.build/en/core-concepts/astro-pages/#custom-404-error-page page
 - Add ToC with https://github.com/theisel/astro-toc
-
+- Add related posts at bottom (once I write more)

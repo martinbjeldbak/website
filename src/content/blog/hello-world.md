@@ -1,5 +1,5 @@
 ---
-title: Hello world
+title: Hello World from Astro Components
 categories: [thoughts]
 pubDate: 2023-07-06
 relatedPosts: []
@@ -11,7 +11,7 @@ with no content or blog, to [Astro]. Make no mistake: it's still boring.
 
 Instead of picking a pre-built theme as with my previous setup, I've built it from
 scratch as a learning experience. Everything is public on my GitHub at
-[martinbjeldbak/website](github.com/martinbjeldbak/website). It's built with
+[martinbjeldbak/website]. It's built with
 
 - [Astro]
 - [Tailwindcss]
@@ -94,3 +94,4 @@ Ok Bye!
 [Vercel]: https://vercel.com/
 [heroicons]: https://heroicons.com/
 [Simple Icons]: https://simpleicons.org/
+[martinbjeldbak/website]: https://github.com/martinbjeldbak/website

@@ -1,6 +1,15 @@
 ---
-const { title, url } = Astro.props;
+import { format, formatISO } from 'date-fns';
+
+interface Props {
+  title: string,
+  url: string,
+  pubDate: Date,
+}
+
+const { title, url, pubDate } = Astro.props;
 ---
-<li>
-  <a href={url}>{title}</a>
+<li class="flex flex-row h-10 items-center">
+  <a class="flex-grow" href={url}>{title}</a>
+  <time datetime={formatISO(pubDate, {representation: 'date' })}>{format(pubDate, 'MMMM yyyy')}</time>
 </li>
