@@ -1,5 +1,5 @@
 ---
-title: Hello World from Astro Components
+title: Hello World from Astro
 categories: [thoughts]
 pubDate: 2023-07-06
 relatedPosts: []
@@ -64,7 +64,9 @@ but Fireship also talks a lot about [Vercel], so I'm considering this too!
 
 ## Performance
 
-TODO
+I know lighthouse doesn't mean anything in the long run, but so far so good!
+
+![Google Lighthouse report screenshot](/assets/performance.png)
 
 ## Thoughts
 
