@@ -15,6 +15,8 @@ engineer, specifically on [ANZ Plus], which is a new account offering from ANZ.
 
 You can read more about my professional experience on [my CV][CV].
 
+Want to connect? Great! Check the links in the header for where you can find me.
+
 [ANZ]: https://www.anz.com.au/
 [ANZ Plus]: https://www.anz.com.au/plus/
 [CV]: https://github.com/martinbjeldbak/CV/blob/main/MartinMadsenCV.pdf
