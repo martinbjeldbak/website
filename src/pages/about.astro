@@ -1,17 +1,20 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import MarkdownLayout from '../layouts/MarkdownLayout.astro'
+import Layout from "../layouts/Layout.astro";
+import MarkdownLayout from "../layouts/MarkdownLayout.astro";
 
-import { Content } from '../pages/about.md';
-
+import { Content } from "../pages/about.md";
 ---
 
-<Layout title="About Martin" favicon='/dk.svg'>
-  <img class="mt-16 rounded-full mx-auto h-48 w-48" src="/assets/me.jpg" alt="A picture of me at the Run Melbourne 2023 half-marathon event" />
+<Layout title="About Martin" favicon="/dk.svg">
+  <img
+    class="mt-16 rounded-full mx-auto h-48 w-48"
+    src="/assets/me.jpg"
+    alt="A picture of me at the Run Melbourne 2023 half-marathon event"
+  />
 
   <div class="my-16">
+    test
     <MarkdownLayout>
-      <Content />
     </MarkdownLayout>
   </div>
 

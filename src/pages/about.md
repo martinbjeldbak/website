@@ -4,7 +4,7 @@ title: 'About'
 
 Hello 👋
 
-I was born in Denmark and graduated from Aalborg University with a masters
+Originally from Denmark, I graduated from Aalborg University with a masters
 in Computer Science in 2016. Later in 2016, I moved to Brisbane, Australia, followed by Melbourne
 in 2021, where I currently reside.
 
