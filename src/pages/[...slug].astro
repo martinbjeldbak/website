@@ -4,7 +4,14 @@ import { getCollection } from "astro:content";
 import BlogPost from "../components/BlogPost.astro";
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection("blog");
+  const blogEntries = await getCollection('blog', ({data}) => {
+    if (import.meta.env.DEV) {
+      return true;
+    }
+
+    return data.draft !== true;
+  });
+
   return blogEntries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },

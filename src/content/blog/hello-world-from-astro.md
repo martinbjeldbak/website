@@ -2,6 +2,7 @@
 title: Hello World from Astro
 categories: [thoughts]
 pubDate: 2023-07-06
+description: First post on the blog on how it's been rewritten with Astro and reasonings behind
 relatedPosts: []
 draft: false
 ---

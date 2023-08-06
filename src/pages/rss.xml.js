@@ -5,9 +5,14 @@ import MarkdownIt from 'markdown-it';
 
 const parser = new MarkdownIt();
 
-
 export async function get(context) {
-  const blog = await getCollection('blog');
+  const blog = await getCollection('blog', ({data}) => {
+    if (import.meta.env.DEV) {
+      return true;
+    }
+
+    return data.draft !== true;
+  });
 
   return rss({
     title: 'Martin Bjeldbak Madsen\'s personal blog',

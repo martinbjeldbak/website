@@ -4,7 +4,12 @@ import BlogPostItem from "../components/BlogPostItem.astro";
 
 import { getCollection } from "astro:content";
 
-const blogEntries = await getCollection("blog");
+const blogEntries = await getCollection("blog", ({data}) => {
+  if(import.meta.env.DEV) {
+    return true;
+  }
+  return data.draft !== true;
+});
 ---
 
 <Layout title="Martin Madsen | martinbjeldbak">
