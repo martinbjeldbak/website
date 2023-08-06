@@ -2,6 +2,7 @@
 import { getEntry } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import { format, formatISO } from 'date-fns';
+import MarkdownLayout from '../layouts/MarkdownLayout.astro'
 interface Props {
   post:  CollectionEntry<'blog'>;
 }
@@ -24,7 +25,7 @@ const { Content } = await entry.render();
     </h3>
   </header>
 
-  <section class="prose prose-indigo md:prose-md lg:prose-md dark:prose-invert hover:prose-a:text-indigo-50 dark:hover:prose-a:text-indigo-200">
+  <MarkdownLayout>
     <Content />
-  </section>
+  </MarkdownLayout>
 </article>

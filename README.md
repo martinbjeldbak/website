@@ -64,3 +64,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 - Add https://docs.astro.build/en/core-concepts/astro-pages/#custom-404-error-page page
 - Add ToC with https://github.com/theisel/astro-toc
 - Add related posts at bottom (once I write more)
+- Add SEO functionality https://github.com/jonasmerlin/astro-seo#readme

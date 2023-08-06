@@ -8,7 +8,7 @@ const blogEntries = await getCollection("blog");
 ---
 
 <Layout title="Martin Madsen | martinbjeldbak">
-    <main class="space-y-4">
+    <main>
       <ul class="text-indigo-800 dark:text-indigo-200">
         {blogEntries.map((post) => <BlogPostItem url={"/" + post.slug} title={post.data.title} pubDate={ post.data.pubDate} />)}
       </ul>
