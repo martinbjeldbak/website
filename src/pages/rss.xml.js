@@ -1,5 +1,5 @@
 import rss from '@astrojs/rss';
-import {getCollection} from 'astro:content';
+import { getCollection } from 'astro:content';
 import sanitizeHtml from 'sanitize-html';
 import MarkdownIt from 'markdown-it';
 
@@ -13,6 +13,7 @@ export async function get(context) {
 
     return data.draft !== true;
   });
+  blog.sort((postA, postB) => postB.data.pubDate.valueOf() - postA.data.pubDate.valueOf());
 
   return rss({
     title: 'Martin Bjeldbak Madsen\'s personal blog',

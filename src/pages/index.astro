@@ -4,12 +4,14 @@ import BlogPostItem from "../components/BlogPostItem.astro";
 
 import { getCollection } from "astro:content";
 
-const blogEntries = await getCollection("blog", ({data}) => {
-  if(import.meta.env.DEV) {
+const blogEntries = await getCollection('blog', ({data}) => {
+  if (import.meta.env.DEV) {
     return true;
   }
+
   return data.draft !== true;
 });
+blogEntries.sort((postA, postB) => postB.data.pubDate.valueOf() - postA.data.pubDate.valueOf());
 ---
 
 <Layout title="Martin Madsen | martinbjeldbak">
