@@ -26,7 +26,7 @@ NAS running DSM 7.2, using folder quotas.
 
 Most of the initial steps are similar to the [official] guide.
 
-### Create a Shared folder for Time Machine
+### Create a Shared Folder for Time Machine
 
 ![Synology new Shared Folder dialog](/assets/syno-new-shared-folder.png)
 
