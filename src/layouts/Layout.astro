@@ -12,6 +12,7 @@ const { title = "Martin Madsen", favicon = "/favicon.png" } = Astro.props;
 
 import Header from "../components/Header.astro";
 import { SEO } from "astro-seo";
+import {ViewTransitions} from 'astro:transitions';
 ---
 
 <!DOCTYPE html>
@@ -30,6 +31,7 @@ import { SEO } from "astro-seo";
         creator: "@martinbjeldbak"
       }}
     />
+    <ViewTransitions />
   </head>
   <body
     class="flex flex-col text-indigo-500 dark:text-indigo-400 min-h-screen bg-indigo-50 dark:bg-indigo-950 antialiased max-w-prose mx-auto"
