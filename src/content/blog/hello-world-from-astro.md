@@ -42,7 +42,7 @@ with the concept of [Content Collections][2], and many other features.
 Building this site, I got a chance to play with Astro [Components][3] and light/dark modes. It should
 also respect the system theme if none is set. Woohoo!
 
-![New header dark/light mode animation](../../images/mode-change.apng)
+![New header dark/light mode animation](../../images/mode-change.gif)
 
 I won't go into the whole setup process, as there are many guides for this. The
 official Astro one is by far the best I've found. They also have a great guide
