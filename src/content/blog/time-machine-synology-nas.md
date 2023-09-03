@@ -28,27 +28,27 @@ Most of the initial steps are similar to the [official] guide.
 
 ### Create a Shared Folder for Time Machine
 
-![Synology new Shared Folder dialog](/assets/syno-new-shared-folder.png)
+![Synology new Shared Folder dialog](../../images/syno-new-shared-folder.png)
 
 NOTE: Ensure you **disable** Recycle Bin and **disable** folder encryption, as
 Time Machine itself will encrypt the backups, as we'll see below
 
-![Synology new Shared Folder security dialog](/assets/syno-new-shared-folder-security.png)
+![Synology new Shared Folder security dialog](../../images/syno-new-shared-folder-security.png)
 
 Enable any advanced settings you need. You can enable a quota here at the folder level, but I will do it on the user level.
 
-![Synology new Shared Folder advanced settings](/assets/syno-new-shared-folder-advanced.png)
+![Synology new Shared Folder advanced settings](../../images/syno-new-shared-folder-advanced.png)
 
 Confirm settings and hit next to create your new folder!
 
-![Synology new Shared Folder confirm settings](/assets/syno-new-shared-folder-confirm.png)
+![Synology new Shared Folder confirm settings](../../images/syno-new-shared-folder-confirm.png)
 
 ### Enable SMB service
 
 SMB is the preferred protocol, as [AFP is deprecated][afp]. So
 let's enable SMB if it's not already via **Control Panel** > **File Services**
 
-![Synology File Services settings pane](/assets/syno-smb.png)
+![Synology File Services settings pane](../../images/syno-smb.png)
 
 ### Set up Bonjour
 
@@ -60,7 +60,7 @@ Bonjour service discovery to locate Synology NAS* is ticked, along with the
 checkbox *Enable Bonjour Time Machine broadcast via SMB*. Then click *Set Time
 machine Folders* and select our newly created *Time Machine* shared folder
 
-![Synology enabling of Bonjour](/assets/syno-bonjour.png)
+![Synology enabling of Bonjour](../../images/syno-bonjour.png)
 
 ### Create user with Shared Folder quota
 
@@ -70,17 +70,17 @@ just be creating one for myself.
 
 Make sure you save the username and password. You'll need it when setting up
 Time Machine on your Mac.
-![Synology new user dialog](/assets/syno-new-user.png)
+![Synology new user dialog](../../images/syno-new-user.png)
 
 Setting of the groups and permissions may differ for you. I have a very simple
 group setup, so will only keep the new user in the default Users group, and assign
 permissions and quota directly on our new Shared folder.
 
-![Synology new user groups dialog](/assets/syno-new-user-groups.png)
-![Synology new user shared folder dialog](/assets/syno-new-user-shared-permissions.png)
+![Synology new user groups dialog](../../images/syno-new-user-groups.png)
+![Synology new user shared folder dialog](../../images/syno-new-user-shared-permissions.png)
 
 In my case, I've set a 300 GB quota on the folder. We'll see if this is enough!
-![Synology new user shared folder quota](/assets/syno-new-user-quota.png)
+![Synology new user shared folder quota](../../images/syno-new-user-quota.png)
 
 Configure any other settings on the next couple of dialog windows to finally
 create the new time machine user. Repeat this for any other user accounts you need to create.
@@ -89,29 +89,29 @@ create the new time machine user. Repeat this for any other user accounts you ne
 
 Now on your Mac, open the **Time Machine** application by searching in spotlight, or from Applications folder in Finder. In my case, I don't have any previously defined Time Machine backup locations, so I have to configure a new backup disk.
 
-![Time Machine settings](/assets/time-machine-settings.png)
+![Time Machine settings](../../images/time-machine-settings.png)
 
 Click on **Select Backup Disk**, and if everything above worked, you'll see the
 shared folder we just created in the popup. Something like *Time Machine on
 "SynologyNAS.local"*. Click on **Use Disk**
 
-![Time Machine Shared Folder selection](/assets/time-machine-folder-select.png)
+![Time Machine Shared Folder selection](../../images/time-machine-folder-select.png)
 
 It'll then ask for the credentials of the user account we just created. Pop those
 in and hit **Connect**
 
-![Time Machine credentials](/assets/time-machine-credentials.png)
+![Time Machine credentials](../../images/time-machine-credentials.png)
 
 You can then choose to encrypt your Time Machine backup, which I highly
 recommend. Generate a random password and store it in 1Password or similar
 password manager.
 
-![Time Machine encryption settings](/assets/time-machine-encryption.png)
+![Time Machine encryption settings](../../images/time-machine-encryption.png)
 
 Click **Ok** and Time Machine will connect to your Synology NAS and start backing
 up your Mac!
 
-![Time Machine now backing up!](/assets/time-machine-backing-up.png)
+![Time Machine now backing up!](../../images/time-machine-backing-up.png)
 
 And that's it! Sit back and watch that beautiful progress bar light up.
 
