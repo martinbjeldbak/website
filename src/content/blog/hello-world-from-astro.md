@@ -42,7 +42,7 @@ with the concept of [Content Collections][2], and many other features.
 Building this site, I got a chance to play with Astro [Components][3] and light/dark modes. It should
 also respect the system theme if none is set. Woohoo!
 
-![New header dark/light mode animation](assets/mode-change.apng)
+![New header dark/light mode animation](../../images/mode-change.apng)
 
 I won't go into the whole setup process, as there are many guides for this. The
 official Astro one is by far the best I've found. They also have a great guide
@@ -67,7 +67,7 @@ but Fireship also talks a lot about [Vercel], so I'm considering this too!
 
 I know lighthouse doesn't mean anything in the long run, but so far so good!
 
-![Google Lighthouse report screenshot](/assets/performance.png)
+![Google Lighthouse report screenshot](../../images/performance.png)
 
 ## Thoughts
 
@@ -78,9 +78,8 @@ than to start from simple components.
 This will be a constant journey and I'll be tweaking away over the coming months
 and experiment with new technologies and topics.
 
-
 For reference, here's what my boring website looked like before this rewrite:
-![Website before Astro](/assets/personal-before.png)
+![Website before Astro](../../images/personal-before.png)
 
 Ok Bye!
 
