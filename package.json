@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@astrojs/rss": "^2.4.3",
-    "@astrojs/tailwind": "^4.0.0",
-    "astro": "^2.7.4",
+    "@astrojs/tailwind": "^5.0.0",
+    "astro": "^3.0.7",
     "astro-seo": "^0.7.5",
     "date-fns": "^2.30.0",
     "markdown-it": "^13.0.1",
@@ -23,6 +23,7 @@
     "@astrojs/ts-plugin": "^1.1.0",
     "@tailwindcss/typography": "^0.5.9",
     "@types/sanitize-html": "^2.9.0",
+    "typescript": "^5.2.2",
     "xo": "^0.55.0"
   },
   "xo": {
