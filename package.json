@@ -13,7 +13,7 @@
     "@astrojs/rss": "^2.4.3",
     "@astrojs/tailwind": "^5.0.0",
     "astro": "^3.0.7",
-    "astro-seo": "^0.7.5",
+    "astro-seo": "^0.8.0",
     "date-fns": "^2.30.0",
     "markdown-it": "^13.0.1",
     "sanitize-html": "^2.11.0",
