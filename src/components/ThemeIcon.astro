@@ -13,10 +13,10 @@
 </button>
 
 <script is:inline>
-var theme;
+var checkTheme;
 
-if(!theme) {
-  theme = (() => {
+if(!checkTheme) {
+  checkTheme = () => {
     if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
       return localStorage.getItem('theme');
     }
@@ -25,8 +25,11 @@ if(!theme) {
       return 'dark';
     }
     return 'light';
-  })();
+  }
 }
+
+
+var theme = checkTheme();
 
 if (theme === 'light') {
   document.documentElement.classList.remove('dark');
