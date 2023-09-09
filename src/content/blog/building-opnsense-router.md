@@ -555,6 +555,10 @@ Again, I can't recommend [Michael Schnerring's guide][schnerring-1] enough.
 It's the basis of my setup, and his includes VLANs and confirmation steps that
 this guide doesn't.
 
+Have any questions or comments? Reach out to me on
+<https://twitter.com/martinbjeldbak> as I'm still undecided on how to get
+comments added to posts.
+
 ### Awesome things you now can do!
 
 So many options - here are a few I've done. I may write about this to go into further detail, but mostly I've followed these to the point.
