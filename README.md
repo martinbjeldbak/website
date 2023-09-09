@@ -26,3 +26,4 @@ All commands are run from the root of the project, from a terminal:
 - Add https://docs.astro.build/en/core-concepts/astro-pages/#custom-404-error-page page
 - Add ToC with https://github.com/theisel/astro-toc
 - Add related posts at bottom (once I write more)
+- Dynamic light/dark mode support for codeblocks [link](https://github.com/shikijs/shiki/blob/main/docs/themes.md#dark-mode-support)
