@@ -20,7 +20,6 @@ All commands are run from the root of the project, from a terminal:
 ## TODO
 
 - Add bold to current page in header
-- Favicon
 - Add https://docs.astro.build/en/guides/integrations-guide/sitemap/
 - Add https://github.com/alextim/astro-lib/tree/main/packages/astro-robots-txt#readme
 - Add post first xxx words to index, add "continue reading" if longer. This will make my index look more filled out
