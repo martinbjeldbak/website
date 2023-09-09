@@ -19,7 +19,7 @@ You can read more about my professional experience on [my CV][CV].
 
 I've been a computer geek my whole life. I'm passionate about open source, self-
 hosting, and digital privacy. I love running, playing video games, and watch
-too much Hasanabi.
+too much [Hasanabi](https://www.twitch.tv/hasanabi).
 
 Want to connect? Great! Check the links in the header for where you can find me.
 
