@@ -578,7 +578,8 @@ So many options - here are a few I've done. I may write about this to go into fu
 ### Further reading
 
 - [Linus Tech Tips video on why you should build your own router](https://www.youtube.com/watch?v=_IzyJTcnPu8)
-- Home Network Guy has great, detailed [video](https://www.youtube.com/watch?v=h2_cQxTkh3Q) that covers setup from installation to many things in this post.
+- [Excellent in depth guie from Home Network Guy](https://homenetworkguy.com/how-to/set-up-a-fully-functioning-home-network-using-opnsense/)
+  - Home Network Guy has [video version too](https://www.youtube.com/watch?v=h2_cQxTkh3Q) that covers setup from installation to many things in this post.
 
 [adguard-setup]: https://0x2142.com/how-to-set-up-adguard-on-opnsense/
 [m.2]: https://www.youtube.com/watch?v=4TsJ7t7IBiw
