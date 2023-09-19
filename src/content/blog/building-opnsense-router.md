@@ -7,6 +7,8 @@ relatedPosts: []
 draft: false
 ---
 
+**Updated 2023-09-19:** added my VLAN setup, Xiaomi troubleshooting
+
 In 2021, I bought a Synology DS912+ as my storage needs expanded. Little did I
 know, this started me down a longer path of home automation and networking.
 Since then my home network has grown in devices and complexity.
